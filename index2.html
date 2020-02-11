@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let numero = prompt("por favor ingrese un numero")
+        var arreglo = []
+        var x
+        for (x=1;x<numero;x++)
+        // if (numero % 2 === 0 || numero % 3 === 0 || numero % 5 === 0 || numero % 7 === 0) {
+            if (numero % 2 === 0) {
+                // document.write("el número es divisible por 2");
+                arreglo.push(2);
+                console.log(2);
+                if (numero % 3 === 0) {
+                    // document.write("el número es divisible por 3");
+                    arreglo.push(3);
+                    console.log(3);
+                    if (numero % 5 === 0) {
+                        // document.write("el número es divisble por 5")
+                        arreglo.push(5);
+                        if (numero % 7 === 0) {
+                            arreglo.push(7);
+                            console.log(arreglo());
+                            document.write("el número es divisible por " + arreglo.toString());
+                        }
+                    }
+                }
+            }
+        }
+        else {
+            document.write("el número no es divisble por ninguno");
+        }
+    </script>
+
+</body>
+
+</html>
